@@ -1,18 +1,18 @@
 class Rectangle extends Shape implements IPrintable {
-    width: number;
-    height: number;
+    private _width: number;
+    private _height: number;
   
     constructor(color: string, width: number, height: number) {
       super(color, 'Rectangle');
-      this.width = width;
-      this.height = height;
+      this._width = width;
+      this._height = height;
     }
   
-    calculateArea(): number {
-      return this.width * this.height;
+    public calculateArea(): number {
+      return this._width * this._height;
     }
   
-    print(): void {
-      console.log(`Area of Rectangle: ${this.width} * ${this.height}`);
+    public print(): void {
+      console.log(`Area of Rectangle: ${this._width} * ${this._height}`);
     }
   }

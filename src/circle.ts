@@ -1,12 +1,12 @@
 class Circle extends Shape {
-    radius: number;
+    private _radius: number;
   
     constructor(color: string, radius: number) {
       super(color, 'Circle');
-      this.radius = radius;
+      this._radius = radius;
     }
   
-    calculateArea(): number {
-      return Math.PI * this.radius * this.radius;
+    public calculateArea(): number {
+      return Math.PI * this._radius * this._radius;
     }
   }

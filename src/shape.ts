@@ -1,10 +1,10 @@
 abstract class Shape implements ICalculetable {
-    readonly color: string;
-    readonly name: string;
+    readonly _color: string;
+    readonly _name: string;
   
     constructor(color: string, name: string) {
-      this.color = color;
-      this.name = name;
+      this._color = color;
+      this._name = name;
     }
   
     abstract calculateArea(): number;

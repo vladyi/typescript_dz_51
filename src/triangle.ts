@@ -1,14 +1,14 @@
 class Triangle extends Shape {
-    base: number;
-    height: number;
+    private _base: number;
+    private _height: number;
   
     constructor(color: string, base: number, height: number) {
       super(color, 'Triangle');
-      this.base = base;
-      this.height = height;
+      this._base = base;
+      this._height = height;
     }
   
-    calculateArea(): number {
-      return 0.5 * this.base * this.height;
+    public calculateArea(): number {
+      return 0.5 * this._base * this._height;
     }
   }

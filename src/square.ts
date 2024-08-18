@@ -1,16 +1,16 @@
 class Square extends Shape implements IPrintable {
-    sideLength: number;
+    private _sideLength: number;
   
     constructor(color: string, sideLength: number) {
       super(color, 'Square');
-      this.sideLength = sideLength;
+      this._sideLength = sideLength;
     }
   
-    calculateArea(): number {
-      return this.sideLength * this.sideLength;
+    public calculateArea(): number {
+      return this._sideLength * this._sideLength;
     }
   
-    print(): void {
-      console.log(`Area of Square: ${this.sideLength} * ${this.sideLength}`);
+    public print(): void {
+      console.log(`Area of Square: ${this._sideLength} * ${this._sideLength}`);
     }
   }
