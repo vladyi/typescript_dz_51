@@ -1,4 +1,4 @@
-class Rectangle extends Shape {
+class Rectangle extends Shape implements IPrintable {
     width: number;
     height: number;
   

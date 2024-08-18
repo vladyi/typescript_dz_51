@@ -1,0 +1,3 @@
+interface IPrintable {
+    print(): void;
+  }

@@ -1,4 +1,4 @@
-abstract class Shape {
+abstract class Shape implements ICalculetable {
     readonly color: string;
     readonly name: string;
   

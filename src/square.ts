@@ -1,4 +1,4 @@
-class Square extends Shape {
+class Square extends Shape implements IPrintable {
     sideLength: number;
   
     constructor(color: string, sideLength: number) {
